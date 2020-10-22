@@ -1,0 +1,231 @@
+// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+%centered-flex-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+#app {
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background: #f3f7fa;
+}
+
+// Page Header & Logo
+.page-header {
+  @extend %centered-flex-element;
+  position: relative;
+  padding: 50px;
+
+  .logo {
+    position: relative;
+    left: 5px;
+    top: 10px;
+  }
+  .loading-spinner {
+    position: absolute;
+  }
+}
+
+// Filters box
+.option {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.filter-box {
+  @extend %flex-column;
+	width: 232px;
+	height: 252px;
+	background: #FFFFFF;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+  
+  .filters-text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  
+  .filter-header {
+    margin: 20px 0px 10px 20px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+}
+
+// Checkboxes
+.checkbox-list {
+  @extend %flex-column;
+  flex-grow: 1;
+
+  .checkbox-container {
+    cursor: pointer;
+    display: flex;
+    
+    &:hover {
+      background: #F1FCFF;
+    }
+    
+    .check-input {
+      position: absolute;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    
+    .check-box {
+      content: '';
+      margin-right: 10px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background-image: url(../public/unchecked.svg);
+    }
+    
+    .check-input:checked + .check-box {
+      background-image: url(../public/checked.svg);
+      border-radius: 2px;
+    }
+  }
+} 
+
+// Main content container
+.content-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+// section contains sort params & tickets
+.main-section {
+  @extend %flex-column;
+  flex: 0 0 503px;
+
+  // Main header (contains sortion params)
+  .main-header {
+    display: flex;
+    height: 50px;
+  
+    .tab-group {
+      display: flex;
+      flex-grow: 1;
+      list-style:none;
+      margin: 0;
+      padding: 0;
+  
+      :first-child {
+        border-radius: 5px 0px 0px 5px;
+      }
+      :last-child {
+        border-radius: 0px 5px 5px 0px;
+      }
+  
+  
+      .tab {
+        @extend %centered-flex-element;
+        flex-grow: 1;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        border: 1px solid #DFE5EC;
+        margin: 0 -1px 0 0;
+        background: #FFFFFF;
+        cursor: pointer;
+  
+        &:hover {
+          background: #e4f2fe;
+          color: #2196f3;
+          border-color: #2196f3;
+        }
+        &.active {
+          background: #2196f3;
+          color: #FFFFFF;
+          border-color: #2196f3;
+        }
+   
+        .tab-text {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+
+  // Ticket card
+  .tickets-card {
+    display: flex;
+    height: 184px;
+    margin-top: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    
+    .card-wrapper {
+      @extend %flex-column;
+      align-items: space-between;
+      justify-content: space-between;
+      flex-grow: 1;
+      padding: 20px;
+    }
+    
+    .info {
+    display: flex;
+    justify-content: space-between;
+  
+      .price {
+        font-size: 24px;
+        line-height: 24px;
+        color: #2196F3;
+      }
+  
+      .carrier {
+        width: 140px;
+      }
+    }
+    
+    // ticket segment styles
+    .ticket {
+      display: flex;
+      justify-content: space-between;
+        
+      .ticket-column {
+        @extend %flex-column;
+        width: 140px;
+          
+        .secondary {
+          font-size: 12px;
+          line-height: 18px;
+          color: #A0B0B9;
+          // $textSecondary:
+          text-transform: uppercase;
+        }
+
+        .normal {
+          font-size: 14px;
+          line-height: 21px;
+          // textPrimary
+          color: #4A4A4A;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+
+[
+  {
+    "id": 1,
+    "price": 14000,
+    "carrier": "MH",
+    "segments": [
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-03-27T00:57:00.000Z",
+        "stops": [],
+        "duration": 540
+      },
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-04-16T15:41:00.000Z",
+        "stops": [],
+        "duration": 540
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "price": 14500,
+    "carrier": "S7",
+    "segments": [
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-03-27T14:36:00.000Z",
+        "stops": [],
+        "duration": 730
+      },
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-04-16T04:10:00.000Z",
+        "stops": [],
+        "duration": 730
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "price": 15000,
+    "carrier": "S7",
+    "segments": [
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-03-27T14:36:00.000Z",
+        "stops": [],
+        "duration": 1433
+      },
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-04-16T04:10:00.000Z",
+        "stops": [],
+        "duration": 1433
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "price": 76945,
+    "carrier": "MH",
+    "segments": [
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-03-27T00:57:00.000Z",
+        "stops": ["AUH"],
+        "duration": 1541
+      },
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-04-16T15:41:00.000Z",
+        "stops": [],
+        "duration": 1097
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "price": 48435,
+    "carrier": "TG",
+    "segments": [
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-03-27T12:04:00.000Z",
+        "stops": [],
+        "duration": 803
+      },
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-04-15T21:23:00.000Z",
+        "stops": ["BKK", "AUH"],
+        "duration": 944
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "price": 99919,
+    "carrier": "FV",
+    "segments": [
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-03-27T15:38:00.000Z",
+        "stops": ["SIN", "DXB", "HKG"],
+        "duration": 1373
+      },
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-04-16T13:07:00.000Z",
+        "stops": ["HKG", "AUH"],
+        "duration": 869
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "price": 73132,
+    "carrier": "SU",
+    "segments": [
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-03-27T11:07:00.000Z",
+        "stops": ["SIN", "IST", "SHA"],
+        "duration": 1335
+      },
+      {
+        "origin": "MOW",
+        "destination": "HKT",
+        "date": "2020-04-16T01:03:00.000Z",
+        "stops": ["IST", "SIN", "HKG"],
+        "duration": 1331
+      }
+    ]
+  }
+]
