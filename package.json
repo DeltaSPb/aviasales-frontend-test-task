@@ -1,12 +1,11 @@
 {
   "name": "aviasales-test",
   "version": "1.0.0",
-  "description": "",
+  "description": "frontend tesk task by aviasales",
+  "private": "true",
   "scripts": {
     "test": "jest",
-    "dev": "",
-    "build": "npx webpack -p --env production",
-    "start": ""
+    "build": "npx webpack -p --env production"
   },
   "keywords": [
     "react",
