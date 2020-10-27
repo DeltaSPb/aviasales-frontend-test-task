@@ -15,16 +15,17 @@ const MainHeader = () => {
   };
 
   return (
-    <div className="main-header">
-      <ul className="tab-group" onClick={handleClick}>
-      {sortingParams.map((param) => (
-        <li
-        key={param}
-        className={`tab ${param === currentParam ? 'active' : ''}`}
-        onClick={handleClick(param)}>
-          <span className="tab-text">{t(param)}</span>
-         </li>
-      ))}
+    <div className='main-header'>
+      <ul className='tab-group' onClick={handleClick}>
+        {sortingParams.map((param) => (
+          <li
+            key={param}
+            className={`tab ${param === currentParam ? 'active' : ''}`}
+            onClick={handleClick(param)}
+          >
+            <span className='tab-text'>{t(param)}</span>
+          </li>
+        ))}
       </ul>
     </div>
   );

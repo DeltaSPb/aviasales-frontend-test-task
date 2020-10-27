@@ -12,15 +12,15 @@ const Segment = (props) => {
       <div key={getKey()} className="ticket">
         <div className="ticket-column">
           <span className="text secondary">{segment.locationsCodes}</span>
-          <span className="text normal">{segment.time}</span>
+          <span className="text primary">{segment.time}</span>
         </div>
         <div className="ticket-column">
           <span className="text secondary">{t('duration')}</span>
-          <span className="text normal">{segment.flightDuration}</span>
+          <span className="text primary">{segment.flightDuration}</span>
         </div>
         <div className="ticket-column">
           <span className="text secondary">{t('stops_interval', { postProcess: 'interval', count: segment.stopsCount })}</span>
-          <span className="text normal">{segment.stops}</span>
+          <span className="text primary">{segment.stops}</span>
         </div>
       </div>
       ))}

@@ -1,10 +1,11 @@
-install: install-deps
-
-develop:
-	npx webpack-dev-server --open
+install:
+	install-deps
 
 install-deps:
-	npm install
+	npm ci
+
+start:
+	npx webpack-dev-server --open
 
 build:
 	rm -rf dist
@@ -23,6 +24,6 @@ lint:
 	npx eslint . --ext js,jsx
 
 deploy:
-	git push heroku
+	surge ./dist
 
 .PHONY: test

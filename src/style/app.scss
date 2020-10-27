@@ -1,4 +1,3 @@
-// @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
 
 %centered-flex-element {
@@ -50,18 +49,18 @@ body {
 
 .filter-box {
   @extend %flex-column;
-	width: 232px;
-	height: 252px;
-	background: #FFFFFF;
-	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-	border-radius: 5px;
-  
+  width: 232px;
+  height: 252px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
   .filters-text {
     font-weight: 400;
     font-size: 13px;
     line-height: 20px;
   }
-  
+
   .filter-header {
     margin: 20px 0px 10px 20px;
     font-weight: 600;
@@ -80,17 +79,17 @@ body {
   .checkbox-container {
     cursor: pointer;
     display: flex;
-    
+
     &:hover {
-      background: #F1FCFF;
+      background: #f1fcff;
     }
-    
+
     .check-input {
       position: absolute;
       -webkit-appearance: none;
       appearance: none;
     }
-    
+
     .check-box {
       content: '';
       margin-right: 10px;
@@ -99,13 +98,13 @@ body {
       height: 20px;
       background-image: url(../public/unchecked.svg);
     }
-    
+
     .check-input:checked + .check-box {
       background-image: url(../public/checked.svg);
       border-radius: 2px;
     }
   }
-} 
+}
 
 // Main content container
 .content-container {
@@ -123,32 +122,31 @@ body {
   .main-header {
     display: flex;
     height: 50px;
-  
+
     .tab-group {
       display: flex;
       flex-grow: 1;
-      list-style:none;
+      list-style: none;
       margin: 0;
       padding: 0;
-  
+
       :first-child {
         border-radius: 5px 0px 0px 5px;
       }
       :last-child {
         border-radius: 0px 5px 5px 0px;
       }
-  
-  
+
       .tab {
         @extend %centered-flex-element;
         flex-grow: 1;
         text-transform: uppercase;
         box-sizing: border-box;
-        border: 1px solid #DFE5EC;
+        border: 1px solid #dfe5ec;
         margin: 0 -1px 0 0;
-        background: #FFFFFF;
+        background: #ffffff;
         cursor: pointer;
-  
+
         &:hover {
           background: #e4f2fe;
           color: #2196f3;
@@ -156,12 +154,11 @@ body {
         }
         &.active {
           background: #2196f3;
-          color: #FFFFFF;
+          color: #ffffff;
           border-color: #2196f3;
         }
-   
+
         .tab-text {
-          font-style: normal;
           font-weight: 600;
           font-size: 12px;
           line-height: 20px;
@@ -175,10 +172,10 @@ body {
     display: flex;
     height: 184px;
     margin-top: 20px;
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    
+
     .card-wrapper {
       @extend %flex-column;
       align-items: space-between;
@@ -186,44 +183,42 @@ body {
       flex-grow: 1;
       padding: 20px;
     }
-    
+
     .info {
-    display: flex;
-    justify-content: space-between;
-  
+      display: flex;
+      justify-content: space-between;
+
       .price {
         font-size: 24px;
         line-height: 24px;
-        color: #2196F3;
+        color: #2196f3;
       }
-  
+
       .carrier {
         width: 140px;
       }
     }
-    
+
     // ticket segment styles
     .ticket {
       display: flex;
       justify-content: space-between;
-        
+
       .ticket-column {
         @extend %flex-column;
         width: 140px;
-          
+
         .secondary {
           font-size: 12px;
           line-height: 18px;
-          color: #A0B0B9;
-          // $textSecondary:
+          color: #a0b0b9;
           text-transform: uppercase;
         }
 
-        .normal {
+        .primary {
           font-size: 14px;
           line-height: 21px;
-          // textPrimary
-          color: #4A4A4A;
+          color: #4a4a4a;
         }
       }
     }

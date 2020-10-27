@@ -7,12 +7,8 @@ const Spinner = () => {
   const isDataLoaded = useSelector(isDataLoadedSelector);
 
   return (
-    <div className="loading-spinner">
-      <PuffLoader
-        size={80}
-        color={'#2196f3'}
-        loading={isDataLoaded}
-      />
+    <div className='loading-spinner'>
+      <PuffLoader size={80} color={'#2196f3'} loading={isDataLoaded} />
     </div>
   );
 };

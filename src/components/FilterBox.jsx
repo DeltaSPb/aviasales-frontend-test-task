@@ -24,12 +24,12 @@ const FilterBox = () => {
   };
 
   return (
-    <div className="filter-box">
-      <div className="filter-header">{t('filterHeader')}</div>
-      <div className="checkbox-list">
-        <Checkbox {...allStopsCheckboxProps} onChange={handleCheck}/>
+    <div className='filter-box'>
+      <div className='filter-header'>{t('filterHeader')}</div>
+      <div className='checkbox-list'>
+        <Checkbox {...allStopsCheckboxProps} onChange={handleCheck} />
         {options.map((option) => (
-          <Checkbox key={getKeyqueId()} {...option} onChange={handleCheck}/>
+          <Checkbox key={getKeyqueId()} {...option} onChange={handleCheck} />
         ))}
       </div>
     </div>

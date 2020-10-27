@@ -1,4 +1,6 @@
-import { uniqueId, max, take } from 'lodash';
+import max from 'lodash/max';
+import take from 'lodash/take';
+import uniqueId from 'lodash/uniqueId';
 import { DateTime, Duration } from 'luxon';
 import i18next from 'i18next';
 

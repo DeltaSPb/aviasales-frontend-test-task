@@ -48,7 +48,7 @@ describe('filtred tickets selector', () => {
 
   it('should return all tickets', () => {
     const stateClone = cloneDeep(state);
-    stateClone.filters.options.forEach((option) => option.selected = true);
+    stateClone.filters.options.forEach((option) => (option.selected = true));
 
     const filtredTickets = filtredTicketsSelector(stateClone);
     const allTickets = state.ticketsInfo.tickets;
@@ -60,7 +60,7 @@ describe('filtred tickets selector', () => {
 describe('sorted tickets selector', () => {
   it('should return quickest tickets sorted by duration', () => {
     const stateClone = cloneDeep(state);
-    stateClone.filters.options.forEach((option) => option.selected = true);
+    stateClone.filters.options.forEach((option) => (option.selected = true));
     const sortedTickets = sortedTicketsSelector(stateClone);
 
     const [firstTicket] = sortedTickets;
@@ -72,7 +72,7 @@ describe('sorted tickets selector', () => {
 
   it('should return cheapest tickets sorted by price', () => {
     const stateClone = cloneDeep(state);
-    stateClone.filters.options.forEach((option) => option.selected = true);
+    stateClone.filters.options.forEach((option) => (option.selected = true));
     stateClone.filters.sortParam = 'cheapest';
     const sortedTickets = sortedTicketsSelector(stateClone);
 

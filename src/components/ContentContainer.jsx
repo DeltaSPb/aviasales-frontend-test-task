@@ -9,15 +9,15 @@ const ContentContainer = () => {
   const tickets = useSelector(ticketsSliceSelector);
 
   return (
-        <div className="content-container">
-            <div className="filter-section">
-                <FilterBox />
-            </div>
-            <div className="main-section">
-                <MainHeader />
-                {tickets.map(Ticket)}
-            </div>
-        </div>
+    <div className='content-container'>
+      <div className='filter-section'>
+        <FilterBox />
+      </div>
+      <div className='main-section'>
+        <MainHeader />
+        {tickets.map(Ticket)}
+      </div>
+    </div>
   );
 };
 

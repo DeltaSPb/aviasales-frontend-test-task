@@ -20,10 +20,8 @@ const App = () => {
 
   return (
     <>
-    <PageHeader />
-    {!isDataLoaded && (
-      <ContentContainer />
-    )}
+      <PageHeader />
+      {!isDataLoaded && <ContentContainer />}
     </>
   );
 };
