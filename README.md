@@ -1,6 +1,6 @@
 # Тестовое задание Aviasales (frontend)
 
-![Node CI](https://github.com/DeltaSPb/frontend-project-lvl4/workflows/Node%20CI/badge.svg?branch=master) [![Maintainability](https://api.codeclimate.com/v1/badges/da53ea1d072ae26b81b2/maintainability)](https://codeclimate.com/github/DeltaSPb/frontend-project-lvl4/maintainability)
+![Node CI](https://github.com/DeltaSPb/aviasales-frontend-test-task/workflows/Node%20CI/badge.svg?branch=main) [![Maintainability](https://api.codeclimate.com/v1/badges/3c487e35498b9e1717d4/maintainability)](https://codeclimate.com/github/DeltaSPb/aviasales-frontend-test-task/maintainability)
 ### [aviasales-frontend-test-task](http://aviasales-frontend-test-task.surge.sh)
 
 
